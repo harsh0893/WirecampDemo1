@@ -35,7 +35,7 @@ public class DetailActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detail);
-        getActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         recyclerView = findViewById(R.id.recyclerView2);
         recyclerViewAdapter = new RecyclerViewAdapter(new ArrayList<DayWeatherModel>(),new ArrayList<WeatherModel>(),this);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));

@@ -39,7 +39,7 @@ public class AddActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add);
-        getActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         listWeekWeatherViewModel = ViewModelProviders.of(this).get(ListWeekWeatherViewModel.class);
 
         autocompleteFragment = (PlaceAutocompleteFragment)

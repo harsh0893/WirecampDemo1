@@ -25,20 +25,20 @@
             </intent-filter>
         </activity>
         <activity android:name=".view.AddActivity"
-            android:parentActivityName="view.MainActivity"
+            android:parentActivityName=".view.MainActivity"
 
             >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="view.MainActivity" />
+                android:value=".view.MainActivity" />
         </activity>
         <activity android:name=".view.DetailActivity"
-            android:parentActivityName="view.MainActivity"
+            android:parentActivityName=".view.MainActivity"
 
             >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="view.MainActivity" />
+                android:value=".view.MainActivity" />
         </activity>
     </application>
 
