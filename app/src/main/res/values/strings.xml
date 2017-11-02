@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">WireCamp</string>
+    <string name="getWeather">Get Weather</string>
+    <string name="today">today</string>
+    <string name="tomorrow">tomorrow</string>
+    <string name="low_temp_padding">8dp</string>
+
+</resources>

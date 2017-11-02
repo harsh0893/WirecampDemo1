@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        app:cardCornerRadius="@dimen/cardview_default_radius"
+        app:cardElevation="@dimen/cardview_default_elevation"
+        android:layout_margin="@dimen/cardview_margin">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/list_item_selector">
+
+            <TextView
+                android:id="@+id/tv_day"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="sans-serif-condensed"
+                android:textAppearance="@style/Widget.AppCompat.Button"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="Thursday, Nov 2"
+                android:layout_marginLeft="32dp" />
+
+            <TextView
+                android:id="@+id/tv_hightemp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed"
+                android:textAppearance="@style/Widget.AppCompat.Button"
+                android:textSize="32sp"
+                app:layout_constraintStart_toStartOf="@+id/tv_day"
+                app:layout_constraintTop_toBottomOf="@+id/tv_day"
+                tools:text="9 C" />
+
+            <TextView
+                android:id="@+id/tv_templow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                android:fontFamily="sans-serif-condensed"
+                android:padding="2dp"
+                android:textSize="16sp"
+                android:textAppearance="@style/Widget.AppCompat.Button"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_hightemp"
+                app:layout_constraintStart_toEndOf="@+id/tv_hightemp"
+                tools:text="8 C" />
+
+            <ImageView
+                android:id="@+id/iv_icon"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="48dp"
+                android:layout_marginRight="48dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_weather"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed"
+                android:padding="2dp"
+                android:textAppearance="@style/Widget.AppCompat.Button"
+                android:textSize="10sp"
+                app:layout_constraintStart_toStartOf="@+id/tv_hightemp"
+                app:layout_constraintTop_toBottomOf="@+id/tv_hightemp"
+                tools:text="Light Rain" />
+
+        </android.support.constraint.ConstraintLayout>
+    </android.support.v7.widget.CardView>
+</android.support.design.widget.CoordinatorLayout>
+
